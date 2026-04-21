@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f3eee6;
+  --card: #fffaf3;
+  --text-dark: #24363b;
+  --text-body: #576264;
+  --accent: #d9781f;
+  --border: #ddd2c4;
+  --white: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+  border-bottom: 1px solid var(--border);
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.logo {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.nav a.active {
+  color: var(--accent);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px 80px;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-tag {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent);
+  background-color: #fff7ef;
+}
+
+.hero-section h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.3rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  color: var(--text-body);
+}
+
+.overview-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.overview-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.overview-card h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+
+.overview-card p {
+  color: var(--text-body);
+}
+
+.overview-card.highlight {
+  border-left: 6px solid var(--accent);
+}
+
+.features-section {
+  margin-bottom: 50px;
+}
+
+.features-section h2,
+.comparison-section h2,
+.impact-section h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.3rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+.feature-card p {
+  color: var(--text-body);
+}
+
+.comparison-section {
+  margin-bottom: 50px;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.comparison-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.comparison-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.9rem;
+  margin-bottom: 18px;
+}
+
+.comparison-card ul {
+  padding-left: 20px;
+}
+
+.comparison-card li {
+  margin-bottom: 10px;
+  color: var(--text-body);
+}
+
+.comparison-card.highlight {
+  border-left: 6px solid var(--accent);
+}
+
+.impact-section {
+  background-color: #fff7ef;
+  border: 1px solid #f0d9bf;
+  border-radius: 18px;
+  padding: 32px;
+  margin-bottom: 50px;
+}
+
+.impact-section p {
+  color: var(--text-body);
+  font-size: 1.08rem;
+  max-width: 980px;
+  margin: 0 auto 16px;
+}
+
+.impact-section p:last-child {
+  margin-bottom: 0;
+}
+
+.benefits-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.benefit-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+  text-align: center;
+}
+
+.benefit-card h3 {
+  font-size: 1.3rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  color: var(--text-body);
+}
+
+.next-step {
+  text-align: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--text-dark);
+  color: var(--white);
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 24px;
+  }
+
+  main {
+    padding: 40px 20px 60px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.4rem;
+  }
+
+  .overview-section,
+  .features-grid,
+  .comparison-grid,
+  .benefits-section {
+    grid-template-columns: 1fr;
+  }
+}
