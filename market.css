@@ -159,3 +159,114 @@ main {
   transform: rotate(45deg) translateY(-2px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
+
+.analysis-section,
+.risk-section,
+.positioning-section,
+.references-section {
+  margin-top: 50px;
+}
+
+.analysis-section h2,
+.risk-section h2,
+.positioning-section h2,
+.references-section h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.3rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  color: var(--text-dark);
+  font-weight: 700;
+  background-color: #fff7ef;
+}
+
+td {
+  color: var(--text-body);
+}
+
+.risk-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.risk-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.risk-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+.risk-card p {
+  color: var(--text-body);
+}
+
+.positioning-section,
+.references-section {
+  background-color: #fff7ef;
+  border: 1px solid #f0d9bf;
+  border-radius: 18px;
+  padding: 32px;
+}
+
+.positioning-section p,
+.references-section li {
+  color: var(--text-body);
+  font-size: 1.05rem;
+}
+
+.references-section ul {
+  padding-left: 22px;
+}
+
+.references-section li {
+  margin-bottom: 14px;
+}
+
+.source-note {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .risk-grid {
+    grid-template-columns: 1fr;
+  }
+
+  th,
+  td {
+    padding: 12px;
+  }
+}
