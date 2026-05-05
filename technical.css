@@ -159,3 +159,19 @@ main {
   transform: rotate(45deg) translateY(-2px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
+
+pre {
+  background-color: #fff7ef;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  overflow-x: auto;
+  margin-top: 14px;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  line-height: 1.7;
+}
