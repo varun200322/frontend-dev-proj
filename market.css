@@ -114,6 +114,10 @@ main {
   color: var(--text-body);
 }
 
+.next-step {
+  text-align: center;
+}
+
 @media (max-width: 900px) {
   .topbar {
     flex-direction: column;

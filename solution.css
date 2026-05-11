@@ -275,3 +275,132 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+.thumbnail-section {
+  margin-bottom: 50px;
+}
+
+.thumbnail-section h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.thumb-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 26px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.thumb-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+}
+
+.thumb-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 16px;
+  border-radius: 18px;
+  background-color: #fff7ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  animation: floatIcon 2.8s ease-in-out infinite;
+}
+
+.thumb-card h3 {
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.thumb-card p {
+  color: var(--text-body);
+  font-size: 0.95rem;
+}
+
+@keyframes floatIcon {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .thumbnail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.topic-research-section {
+  margin-bottom: 50px;
+}
+
+.topic-research-section h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.topic-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.topic-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+.topic-card p,
+.topic-card li {
+  color: var(--text-body);
+}
+
+.topic-card ul {
+  padding-left: 20px;
+}
+
+.topic-card a {
+  color: var(--text-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.topic-card a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -49,6 +49,10 @@ body {
   font-weight: 600;
 }
 
+.next-step {
+  text-align: center;
+}
+
 .nav a.active {
   color: var(--accent);
 }
