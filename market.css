@@ -116,6 +116,17 @@ main {
 
 .next-step {
   text-align: center;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--text-dark);
+  color: var(--white);
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 700;
 }
 
 @media (max-width: 900px) {
@@ -272,5 +283,46 @@ td {
   th,
   td {
     padding: 12px;
+  }
+}
+
+.risk-process-section,
+.risk-table-section {
+  margin-bottom: 50px;
+}
+
+.risk-process-section h2,
+.risk-table-section h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.3rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.risk-process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.risk-process-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.risk-process-card h3 {
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+.risk-process-card p {
+  color: var(--text-body);
+}
+
+@media (max-width: 900px) {
+  .risk-process-grid {
+    grid-template-columns: 1fr;
   }
 }
