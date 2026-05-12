@@ -326,3 +326,42 @@ td {
     grid-template-columns: 1fr;
   }
 }
+
+.competitor-verdict-section {
+  margin-bottom: 50px;
+}
+
+.competitor-verdict-section h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.3rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.verdict-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.verdict-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.verdict-card h3 {
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.verdict-card p {
+  color: var(--text-body);
+}
+
+@media (max-width: 900px) {
+  .verdict-grid {
+    grid-template-columns: 1fr;
+  }
+}
